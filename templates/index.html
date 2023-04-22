@@ -1,0 +1,18 @@
+<h1>Hello World </h1>
+<p>This is my page</p>
+
+<p>My name is {{first_name}}</p>
+
+<p>{{stuff|safe}}</p>
+
+<h3>Omiljena Pica:</h3>
+
+{% for pica in favorite_pizza %}
+
+{% if pica == 41 %}
+	{{ pica + 100 }}<br>
+	{% else %}
+		{{ pica }}<br>
+{% endif %}
+
+{% endfor %}
